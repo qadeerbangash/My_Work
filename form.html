@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Form</title>
+</head>
+<h1>Form</h1>
+
+<body>
+    <form action="http://www.example.com/subscribe.php" method="get">
+        <p>This is where the form controls will appear.
+        </p>
+    </form>
+    <h1>Input</h1>
+    <form action="http://www.example.com/login.php">
+        <p>Username:
+
+            <input type="text" name="username" size="15" maxlength="30" />
+
+        </p>
+        <hr>
+    </form>
+    <h1>Text Area</h1>
+    <form action="http://www.example.com/add.php">
+        <p> Your name: <input type="text"></p>
+        <textarea name="Comments" cols="10" rows="4">
+            Enter Comments......</textarea>
+        <hr>
+
+        <h1>Radio Button</h1>
+        <p>
+            <mark>Gender:</mark>
+            male <input type="radio" name="Gender">
+            female <input type="radio" name="Gender">
+
+        </p>
+        <hr>
+
+        <h1>Check Box</h1>
+        <p>
+            select more than one:<br>
+            <input type="checkbox" name="countries" value="Pakistan"><b>Pakistan</b>
+            <input type="checkbox" name="countries" value="India"><b>India</b>
+            <input type="checkbox" name="countries" value="Iran"><b>Iran</b>
+            <input type="checkbox" name="countries" value="China"><b>China</b>
+
+        </p>
+        <hr>
+        <h2>Drop Down ListBox(ComboBox)</h2>
+        <p>
+            Select Your Country:<br>
+            <select name="Country">
+                <option value="Select">Selected</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Iran">Iran</option>
+                <option value="China">China</option>
+                <hr>
+                <hr>
+
+            </select>
+        </p>
+        <h2>File</h2>
+        <p>
+            Uploade your file:
+            <input type="file" name="Document"><br>
+            <input type="submit" name="submit" value="Ok">
+            <hr>
+        </p>
+        <h2>Image Buttton</h2>
+        <p>
+            <input type="image" src="images/subscribe.jpg">
+            <hr>
+        </p>
+        <h2>Hidden</h2>
+        <button><img src="images/add.gif" alt="add" width="10" height="10" /> Add</button>
+        <input type="hidden" name="bookmark" value="lyrics" />
+        <hr>
+
+        <h2>Label</h2>
+        <p>
+            <label for="Username">Name:</label>
+            <input type="text" id="Username"><br><br>
+
+            <label>Age: <input type="text" name="age" /></label>
+            <br/>
+            Gender:
+            <input id="female" type="radio" name="gender" value="f">
+            <label for="female">Female</label>
+            <input id="male" type="radio" name="gender" value="m">
+            <label for="male">Male</label><hr>
+        </p>
+        <h2>Grouping From Element</h2>
+        <p>
+        <fieldset>
+                <legend>Parsonal Details</legend>
+                Name:<input type="text"><br>
+                Father Name: <input type="text"><br>
+                Gender: <input type="radio" name="gender">male
+                         <input type="radio" name="gender">female<hr>
+        </fieldset></p>
+        <h2>Form Validation</h2>
+        <center><fieldset> <p>
+            <legend>Data</legend>
+            F Name:
+            <input required="required" type="text"><br>
+            L Name:
+            <input required="required" type="text"><br>
+            Gender:
+            <input required="required" type="radio">Male<br>
+            <input required="required" type="radio">Female<br>
+            <button>submit</button><hr>
+
+        </p></fieldset></center>
+        <h2>Date Input</h2>
+        <p>
+            Enter your Date of Birth:<br>
+           <b>DOB </b><input type="date" name="DOB"><hr>
+        </p><hr>
+
+        <h2>Email , URL & Search </h2>
+
+        <p>
+            <label for="user">Email:</label>
+             <input type="email" id="user"><br>
+            <label for="web">Web :</label>
+             <input type="url"  id="web"><br>
+            <label for="src">Search: </label>
+            <input type="search" id="src"><br>
+            <button>ok</button><hr>
+        </p>
+        <h2>PlaceHolder</h2>
+        <input type="text" placeholder="Enter Your Name"><br>
+        <button>Enter</button>
+    </form>
+
+
+
+</body>
+
+</html>
